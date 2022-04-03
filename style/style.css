@@ -14,9 +14,29 @@
     display: grid;
 }
 
+.navcolunas {
+    grid-template-columns: 100px 200px 150px;
+    gap: 10px;
+    width: 100%;
+}
+
+.navcolunas > a {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: -13px;
+    border-radius: 10px;
+}
+
 .colunas {
     grid-template-columns: 2.3fr 1fr;
-    height: 2000px;
+    height: 100%;
+}
+
+.colunas img {
+    display: block;
+    margin: 30px auto;
+    width: 90%;
 }
 
 .item01 > div {
@@ -92,6 +112,17 @@
     .colunas {
         grid-template-columns: 1fr;
     }
+
+    .navcolunas {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    .navcolunas > a {
+        border: 1px solid rgb(66, 66, 66);
+    }
 }
 body {
     background-color: rgb(20,21,24);
@@ -100,13 +131,8 @@ body {
     color: white;
 }
 
-header {
-    color: white;
-    background-image: url(imagens/Sem\ Título-2.png);
-    width: 1920px;
-    height: 350px;
-    padding: 0px 0px;
-    margin: -21px auto;
+header img {
+    max-width: 100%;
 }
 
 nav {
@@ -136,10 +162,4 @@ main {
 a {
     text-decoration: none;
     color: white;
-}
-
-img {
-    display: block;
-    margin: 30px auto;
-    width: 90%;
 }
