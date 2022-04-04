@@ -178,7 +178,7 @@
         width: 576px;
     }
 
-    .video > iframe {
+    .item02 > .video > iframe {
         left: 10%;
         width: 80%;
         height: 80%;
