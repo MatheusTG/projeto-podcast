@@ -82,14 +82,16 @@
     background-color: rgb(25, 26, 29);
     padding: 0.1px 20px;
     border-radius: 10px;
+    margin: 0px -20px;
 }
 
 .botao {
-    background-color: rgb(200, 0, 0);
+    background-color: rgb(150, 0, 0);
     font-family: "Barlow Bold";
     text-align: center;
     padding: 10px;
     margin: auto;
+    margin-bottom: 40px;
     width: 90%;
     border-radius: 15px;
     font-size: 20px;
@@ -97,7 +99,7 @@
 
 .botao:hover {
     font-size: 22px;
-    background-color: rgb(125, 0, 0);
+    background-color: rgb(100, 0, 0);
     padding-top: 3px;
     transition-duration: 0.5s;
 }
@@ -108,14 +110,16 @@
     margin: 20px auto;
 }
 
-.nav > a {
+.nav > button {
     background-color: rgb(60, 60, 60);
+    color: white;
+    font-family: "Barlow Bold";
     margin: 0px 2px;
     padding: 10px 15px;
     border-radius: 19px;
 }
 
-.nav > a:hover {
+.nav > button:hover {
     background-color: rgb(85, 85, 85);
 }
 
@@ -124,8 +128,13 @@
     gap: 10px;
 }
 
-.socialmedia p {
+.socialmedia img {
+    width: 20px;
+}
+
+.socialmedia div {
     border: 1px solid rgb(66, 66, 66);
+    padding-left: 15px;
 }
 
 @media (max-width: 760px) {
@@ -148,6 +157,31 @@
 @media (max-width: 900px) {
     .colunas {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1550px) {
+    .socialmedia {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1580px) {
+    .extra {
+        width: 560px;
+        top: -50%;
+        left: -500%;
+    }
+
+    .item02 {
+        height: 1480px;
+        width: 576px;
+    }
+
+    .video > iframe {
+        left: 10%;
+        width: 80%;
+        height: 80%;
     }
 }
 
@@ -185,9 +219,10 @@ nav > a:hover {
 footer {
     background-color: rgb(25, 26, 29);
     padding: 0.1px 20px;
-    margin: 15px auto;
+    margin: 30px auto;
     width: 90%;
     border-radius: 10px;
+    padding-bottom: 25px;
 }
 
 a {
