@@ -30,7 +30,7 @@
     <main>
         <section class="grid colunas">
             <div class="item01">
-                <div class="video">
+                <div class="video video-principal">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/45PK6XQMn74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
@@ -146,14 +146,14 @@
             </div>
         </section>
         <footer>
-            <h1>CRÉDITOS</h1>
+            <h2>CRÉDITOS</h2>
             <p><b>Matheus Teodoro Garcia:</b> <i>Pesquisa, Disigner e Produção do Podcast</i></p>
             <p><b>Matheus Machado:</b> <i>Pesquisa, Produção do Podcast</i></p>
             <p><b>Amanda Soares:</b> <i>Pesquisa e Produção do Podcast</i></p>
             <p><b>Sara Stephany:</b> <i>Pesquisa e produção do Podcast</i></p>
             <p><b>Lara Heloisa:</b> <i>Pesquisa e Produção do Podcast</i></p>
             <br>
-            <h1>ENTRE E CONTATO</h1>
+            <h2>ENTRE E CONTATO</h2>
             <div class=" grid socialmedia">
                 <div>
                     <h3>Matheus Teodoro</h3>
@@ -193,7 +193,7 @@
 
 <script>
 
-    function tableshowwhite(a, b, c, d){
+    function tableshowwhite(a, b, c="", d=""){
 
         len = menu.childElementCount;
 
@@ -213,7 +213,7 @@
             }
         }
 
-        menu.children[c].click();
+        menu.children[a].click();
 
     }
 
