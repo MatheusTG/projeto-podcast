@@ -6,6 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maiores Podcasts</title>
     <link rel="stylesheet" href="../style/style.css">
+    <style>
+        .colunas-maiores {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .colunas-maiores img {
+            width: 90%;
+            margin: 0px 0px 5% 5%;
+        }
+
+        h1 {
+            background-color: rgb(80, 80, 80);
+            padding: 10px 0px;
+            text-align: center;
+        }
+
+        @media (max-width: 760px) {
+            .colunas-maiores {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+
 </head>
 <body>
     <header>
@@ -23,11 +50,33 @@
     <nav class="grid navcolunas">
         <a href="../index.html">HOME</a>
         <a href="#">MAIORES PODCASTS</a>
-        <a href="episodios.html">EPISÓDIOS</a>
+        <a href="curso.html">CURSOS</a>
         <a href="noticias.html">NÓTICIAS</a>
     </nav>
     <main>
-        <h1>Conheça os maiores podcasts do Brasil</h1>
+        <h1>OS MAIORES PODCASTS DO BRASIL</h1>
+
+        <section class="grid colunas-maiores">
+            <div class="coluna01">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 1.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 2.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 3.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 4.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 5.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 11.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 12.jpeg" alt="">
+            </div>
+            <div>
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 6.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 7.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 8.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 9.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 10.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 13.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 14.jpeg" alt="">
+            </div>
+        </section>
+        
     </main>
 </body>
 </html>

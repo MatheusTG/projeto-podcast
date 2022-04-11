@@ -15,23 +15,22 @@
 }
 
 .navcolunas {
-    grid-template-columns: 100px 200px 150px 150px;
+    grid-template-columns: 100px 220px 150px 150px;
     gap: 10px;
+    background-color: black;
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 .navcolunas > a {
-    width: 100%;
     text-align: center;
     padding: 10px 0px;
-    margin-top: -13px;
     border-radius: 10px;
 }
 
 .colunas {
     grid-template-columns: 2.3fr 1fr;
-    height: 100%;
-    width: 100%;
 }
 
 .item01 {
@@ -155,6 +154,7 @@
 
     .navcolunas {
         grid-template-columns: 1fr;
+        background-color: rgb(20, 21, 24);
         gap: 18px;
         width: 95%;
         margin: 15px auto;
@@ -162,6 +162,7 @@
 
     .navcolunas > a {
         border: 1px solid rgb(66, 66, 66);
+        margin-top: -13px;
     }
 }
 

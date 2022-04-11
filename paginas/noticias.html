@@ -6,6 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notícias</title>
     <link rel="stylesheet" href="../style/style.css">
+    <style>
+        .principal {
+            background-color: rgb(25, 26, 29);
+            border-radius: 10px;
+            max-width: 1300px;
+            height: 100%;
+            margin: -11px auto 0px auto;
+            padding: 10px;
+            padding-top: 30px;
+        }
+        .principais-noticias {
+            grid-template-areas: "a b" "a c";
+            row-gap: 3.2%;
+        }
+
+        .principais-noticias img {
+            display: block;
+            width: 95%;
+            margin: auto;
+        }
+
+        .principais-noticias h1 {
+            position: absolute;
+        }
+
+        .principais-noticias img:hover {
+            width: 100%;
+            transition-duration: 0.5s;
+        }
+
+        .imagem01 {
+            grid-area: a;
+        }
+
+        
+        .imagem02 {
+            grid-area: b;
+        }
+        
+        .imagem03 {
+            grid-area: c;
+        }
+
+        .imagem {
+            border-radius: 2%;
+        }
+
+        .noticia {
+            position: relative;
+
+        }
+
+        .texto {
+            position: absolute;
+            text-shadow: 1px 1px 3px black;
+            font-size: 2em;
+            margin: 0px 0px 0% 11px;
+            padding: 5px 0px 20px 20px;
+            bottom: 0%;
+            left: 0px;
+            right: 10%;
+        }
+
+        .noticias-secundarias {
+            grid-template-columns: 1fr 5fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            column-gap: 10px;
+            margin: 10% 0px 0px 10px;
+            padding-right: 30%;
+        }
+
+        .noticias-secundarias img {
+            max-width: 200px;
+            margin-bottom: 20%;
+        }
+
+        .noticias-secundarias p {
+            font-size: 2em;
+            margin-top: 0px;
+        }
+
+        @media (max-width: 700px) {
+            .principais-noticias h2{
+                font-size: 20px;
+                margin: 0px 0px -15px -5px;
+            }
+
+            .noticias-secundarias {
+                padding-right: 0px;
+            }
+
+            .noticias-secundarias p {
+                font-size: 25px;
+            }
+        }
+
+        body {
+            background-color: rgb(20, 21, 24);
+        }
+
+        main > h1 {
+            background-color: rgb(80, 80, 80);
+            padding: 10px 0px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,11 +129,66 @@
     <nav class="grid navcolunas">
         <a href="../index.html">HOME</a>
         <a href="maiores.html">MAIORES PODCASTS</a>
-        <a href="episodios.html">EPISÓDIOS</a>
+        <a href="curso.html">CURSOS</a>
         <a href="#">NÓTICIAS</a>
     </nav>
     <main>
-        <h1>Tenha acesso as noticías de podcasts</h1>
+        <h1>AS PRINCIPAIS NOTÍCIAS ENVOLVENDO PODCASTS</h1>
+        <div class="principal">
+            <div class="grid principais-noticias">
+                <div class="imagem01">
+                    <div class="noticia">
+                        <img class="imagem grande" src="../style/imagens/noticia-monark.png" alt="">
+                        <h2 class="texto">Mornark é "demitido" do Flow após citar partidos NAZISTAS! Entenda:
+                        </h2>
+                    </div>
+                </div>
+                <div class="imagem02">
+                    <div class="noticia">
+                        <img class="imagem pequena" src="../style/imagens/noticia-podpah.png" alt="">
+                        <h2 class="texto">PODPAH se torma o maior podcast do Brasil! Entenda:</h2>
+                    </div>
+                </div>
+                <div class="imagem03">
+                    <div class="noticia">
+                        <img class="imagem pequena" src="../style/imagens/noticia-podcast.png" alt="">
+                        <h2 class="texto">Brasil é o 3º país que mais consome podcasts no mundo! Entenda:</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="grid noticias-secundarias">
+                <div>
+                    <img src="../style/imagens/imagens-noticias/imagem-noticia01.png" alt="">
+                </div>
+                <div>
+                    <p>Confira: Monark cria novo podcast em plataforma concorrente do YouTube, e já ultrpassa PodPah!</p>
+                </div>
+                <div>
+                    <img src="../style/imagens/imagens-noticias/imagem-noticia02.png" alt="">
+                </div>
+                <div>
+                    <p>Lula participa do Podpah, e Igão e mítico viram motivo de discussão nas redes sociais!</p>
+                </div>
+                <div>
+                    <img src="../style/imagens/imagens-noticias/imagem-noticia03.png" alt="">
+                </div>
+                <div>
+                    <p>O Primo Rico cria podcast no Spotify e já se torma um dos maisres Podcasts da plataforma!</p>
+                </div>
+                <div>
+                    <img src="../style/imagens/imagens-noticias/imagem-noticia04.png" alt="">
+                </div>
+                <div>
+                    <p>Você sabia que o Mano Brown possui um dos podcasts mais ouvidos do spotify? Não! Então confica agora:</p>
+                </div>
+                <div>
+                    <img src="../style/imagens/imagens-noticias/imagem-noticia05.png" alt="">
+                </div>
+                <div>
+                    <p>Confira a lista dos maiores podcasts do Brasil, e quais são seus respectivos donos e objetivos!</p>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
