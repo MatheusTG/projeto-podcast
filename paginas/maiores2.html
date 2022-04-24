@@ -4,25 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de Podcast</title>
+    <title>Maiores Podcasts</title>
     <link rel="stylesheet" href="../style/style.css">
     <style>
-        .item02 {
-            height: 3000px;
+        nav > .maiores-nav {
+            background-color: rgb(90, 90, 90);
+        }
+        
+        .colunas-maiores {
+            grid-template-columns: 1fr 1fr;
         }
 
-        .item02 a {
-            font-size: 20px;
+        .colunas-maiores img {
+            width: 90%;
+            margin: 0px 0px 5% 5%;
         }
 
-        .item02 a:hover {
-            text-decoration: underline;
+        h1 {
+            background-color: rgb(50, 50, 60);
+            padding: 10px 0px;
+            text-align: center;
         }
 
-        li {
-            margin-bottom: 5%;
+        main > h3 {
+            margin: 0px 3%;
+            text-align: justify;
+        }
+
+        @media (max-width: 760px) {
+            .colunas-maiores {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            main > h3 {
+                font-size: 16px;
+            }
         }
     </style>
+
 </head>
 <body>
     <header>
@@ -39,39 +62,34 @@
 
     <nav class="grid navcolunas">
         <a class="home-nav" href="../index.html">HOME</a>
-        <a class="maiores-nav" href="maiores.html">MAIORES PODCASTS</a>
-        <a class="cursos-nav" href="#">CURSOS</a>
+        <a class="maiores-nav" href="#">MAIORES PODCASTS</a>
+        <a class="cursos-nav" href="curso.html">CURSOS</a>
         <a class="noticias-nav" href="noticias.html">NÓTICIAS</a>
     </nav>
     <main>
-        <section class=" colunas grid">
-            <div class="item01">
-                <h1>Você ja pensou em criar seu própio podcast?</h1>
-                <p>Bom diferente do passado, hoje em dia qualquer um pode ter seu própio podcast! Basta você seguir uma série de critérios marketing e qualidade do conteúdo.</p>
-                <p>Muitos pensam que é necessaria dezenas de milhares de reais para começar um podcast, e ter alguma chance de ser relevante, porém isso não é verdade!</p>
-                <p>hoje em dia você pode seguir os conselhos de quem começou do zero, e chegou no topo, porque assim você consegue filtrar oque da certo, das coisas que dão errado, para assim ter mais chance chegar aonde você deseja!</p>
-                <h3>Caso você queira saber mais, basta acompanhar as video aulas abaixo, e seus respectivos canais:</h3>
-                <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rRPU42zctCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oWDhrtwjf4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jKDmo1xMJls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9Q3Stm06cCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+        <h1>OS MAIORES PODCASTS DO BRASIL</h1>
+
+        <section class="grid colunas-maiores">
+            <div class="coluna01">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 1.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 2.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 3.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 4.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 5.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 11.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 12.jpeg" alt="">
             </div>
-            <div class="item02">
-                <h1>Principais Cursos Disponíveis</h1>
-                <ul>
-                    <li><a href="https://www.udemy.com/course/cursopodcast/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Webindex_Catchall_la.PT_cc.BR&utm_term=_._ag_114148736799_._ad_485704569539_._de_c_._dm__._pl__._ti_dsa-40209827789_._li_1031573_._pd__._&gclid=CjwKCAjw6dmSBhBkEiwA_W-EoIcOzZ4rW7EEYszwTQI6FeDLo3_mkuv7KQuFBNlZZQ8fkS2lt1O-mhoCLPcQAvD_BwE">Curso de Diego Davila (Udemy)</a></li>
-                    <li><a href="https://www.sp.senac.br/cursos-livres/curso-de-producao-de-podcast">Curso livre da Senac</a></li>
-                </ul>
+            <div>
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 6.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 7.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 8.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 9.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 10.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 13.jpeg" alt="">
+                <img src="../style/imagens/imagens-maiores-podcasts/Slide 14.jpeg" alt="">
             </div>
         </section>
+        <h3>OBS: Os podcasts da lista acima não estão ordenados! Isso porque, para um podcast ser considerado grande, deve-se levar em consideração diversos conceitos como, visualizaçãoes, seguidores, relevância e principalmente o nicho, e por não ser possível ter acesso a alguns desses dados, a lista acima foi criada de aleatória, porém ainda sim, com os maiores podcasts do brasil!</h3>
         <footer>
             <h2>CRÉDITOS</h2>
             <p><b>Matheus Teodoro Garcia:</b> <i>Pesquisa, Disigner e Produção do Podcast</i></p>

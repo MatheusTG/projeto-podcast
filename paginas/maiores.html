@@ -1,51 +1,113 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maiores Podcasts</title>
+    <title>Projeto Podcast - Maiores Podcasts do Brasil</title>
     <link rel="stylesheet" href="../style/style.css">
     <style>
-        nav > .maiores-nav {
-            background-color: rgb(90, 90, 90);
-        }
-        
-        .colunas-maiores {
-            grid-template-columns: 1fr 1fr;
+        body {
+            height: 100%;
         }
 
-        .colunas-maiores img {
-            width: 90%;
-            margin: 0px 0px 5% 5%;
+        /* IMAGENS */
+
+        .imagem {
+            position: relative;
+            height: max(1000px, 100vh);
+            width: 100%;
+            margin-top: 10%;
         }
 
-        h1 {
-            background-color: rgb(50, 50, 60);
-            padding: 10px 0px;
-            text-align: center;
+        .imagem1 {
+            background: rgb(25, 26, 29) url(../style/imagens/imagens-maiores/flow-podcast.png) center center no-repeat fixed;
+            background-size: cover;
+            margin-top: 100vh;
         }
 
-        main > h3 {
-            margin: 0px 3%;
+        .imagem2 {
+            background: rgb(25, 26, 29) url(../style/imagens/imagens-maiores/podpah.png) center center no-repeat fixed;
+            background-size: cover;
+        }
+
+        .imagem3 {
+            background: rgb(25, 26, 29) url(../style/imagens/imagens-maiores/venus.png) center center no-repeat fixed;
+            background-size: cover;
+        }
+
+        .imagem4 {
+            background: rgb(25, 26, 29) url(../style/imagens/imagens-maiores/ciencia-sem-fim.png) center center no-repeat fixed;
+            background-size: cover;
+        }
+        /* INFORMACOES */
+
+        .informacoes {
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            height: max(900px, 90vh);
+            max-width: 90%;
+            margin-left: 2vw;
+            border-radius: 3%;
+        }
+
+        .informacoes h1 {
+            margin-left: 5%;
+            font-size: max(40px, 5vw);
+        }
+
+        .informacoes p {
+            margin-left: 5%;
+            font-size: max(25px, 2.5vw);
             text-align: justify;
         }
+        
+        /* ESTATISTICAS*/
 
-        @media (max-width: 760px) {
-            .colunas-maiores {
-                grid-template-columns: 1fr;
-            }
+        .estatisticas {
+            height: 100vh;
+            width: 100%;
+            margin-top: 2%;
+        }
 
-            h1 {
-                font-size: 22px;
-            }
+        .estatisticas p {
+            background: linear-gradient(90deg, rgba(50, 50, 50, 0.8), rgba(50, 50, 50, 0));
+            padding: 5px;
+            font-size: max(30px, 3vw);
+        }
 
-            main > h3 {
-                font-size: 16px;
+        .estatisticas .item01 h1 {
+            font-size: max(35px, 4vw);
+            background: linear-gradient(90deg, rgb(200, 200, 200), rgba(50, 50, 50, 0.3));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: black;
+        }
+
+        .estatisticas .item02 {
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .caixa {
+            border: 2px solid rgb(200, 200, 200);
+            padding-left: 3%;
+            margin-top: 2%;
+        }
+
+        .footer {
+            margin-top: 20%;
+        }
+
+        @media (max-width: 900px) {
+            .estatisticas .item02 {
+                margin-top: 5%;
             }
         }
     </style>
-
 </head>
 <body>
     <header>
@@ -58,80 +120,220 @@
 
             <img src="../style/imagens/microfone1.png" alt="">
         </picture>
+            
+        <nav class="grid navcolunas">
+            <a class="home-nav" href="../index.html">HOME</a>
+            <a class="maiores-nav" href="#">MAIORES PODCASTS</a>
+            <a class="cursos-nav" href="curso.html">CURSOS</a>
+            <a class="noticias-nav" href="noticias.html">NÓTICIAS</a>
+        </nav>
     </header>
-
-    <nav class="grid navcolunas">
-        <a class="home-nav" href="../index.html">HOME</a>
-        <a class="maiores-nav" href="#">MAIORES PODCASTS</a>
-        <a class="cursos-nav" href="curso.html">CURSOS</a>
-        <a class="noticias-nav" href="noticias.html">NÓTICIAS</a>
-    </nav>
     <main>
-        <h1>OS MAIORES PODCASTS DO BRASIL</h1>
+        <div class="imagem imagem1">
+            <div class="informacoes">
+                <h1>Flow Podcast</h1>
+                <p>Atualmente é impossível falar de podcasts sem falar do flow, que é simpresmente o programa que popularizou os podcasts no Brasil, Qual é o melhor curso de programação pra você? Nesse vídeo eu falo sobre qual curso de programação escolher, alguns inscritos perguntaram sobre cursos de programação e nesse vídeo eu faço uma comparação/análise dos principais cursos de programação, como o do Programador </p>
+            </div>
+        </div>
 
-        <section class="grid colunas-maiores">
-            <div class="coluna01">
-                <img src="../style/imagens/imagens-maiores-podcasts/Slide 1.jpeg" alt="">
-                <img src="../style/imagens/imagens-maiores-podcasts/Slide 2.jpeg" alt="">
-                <img src="../style/imagens/imagens-maiores-podcasts/Slide 3.jpeg" alt="">
-                <img src="../style/imagens/imagens-maiores-podcasts/Slide 4.jpeg" alt="">
-                <img src="../style/imagens/imagens-maiores-podcasts/Slide 5.jpeg" alt="">
-                <img src="../style/imagens/imagens-maiores-podcasts/Slide 11.jpeg" alt="">
-                <img src="../style/imagens/imagens-maiores-podcasts/Slide 12.jpeg" alt="">
+        <div class="estatisticas grid colunas">
+            <section class="item01">
+                <div class="caixa">
+                    <h1>Estatísticas do Frow Podcast</h1>
+                    <p>Views: 476 Milhões</p>
+                    <p>Inscritos: 3,78 Milhões</p>
+                </div>
+                <div class="caixa">
+                    <h1>Estatísticas do Cortes do Flow</h1>
+                    <p>Views: 795 Milhões</p>
+                    <p>Inscritos: 2,22 Milhões</p>
+                </div>
+            </section>
+
+            <section class="item02">
+                <h1>Conheça o Flow Podcast</h1>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wR3xStPJbEI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AezMSW66DM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Cko3pI9ulo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-cO2D_ZHzPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yFx0UKNGDUg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
+
+        <div class="imagem imagem2">
+            <div class="informacoes">
+                <h1>PodPah</h1>
+                <p>Atualmente é impossível falar de podcasts sem falar do flow, que é simpresmente o programa que popularizou os podcasts no Brasil, Qual é o melhor curso de programação pra você? Nesse vídeo eu falo sobre qual curso de programação escolher, alguns inscritos perguntaram sobre cursos de programação e nesse vídeo eu faço uma comparação/análise dos principais cursos de programação, como o do Programador </p>
+            </div>
+        </div>
+
+        <div class="estatisticas grid colunas">
+            <section class="item01">
+                <div class="caixa">
+                    <h1>Estatísticas do PodPah</h1>
+                    <p>Views: 513 Milhões</p>
+                    <p>Inscritos: 5,33 Milhões</p>
+                </div>
+                <div class="caixa">
+                    <h1>Estatísticas do Cortes do PodPah</h1>
+                    <p>Views: 806 Milhões</p>
+                    <p>Inscritos: 2,06 Milhões</p>
+                </div>
+            </section>
+    
+            <section class="item02">
+                <h1>Conheça o PodPah</h1>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iu34ZfpTKv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tcEd033pz7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/r4JJh0lbYHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/r_2NKKzBA88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video extra">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NxU9xfzd3sY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
+
+        <div class="imagem imagem3">
+            <div class="informacoes">
+                <h1>Venus Podcast</h1>
+                <p>Atualmente é impossível falar de podcasts sem falar do flow, que é simpresmente o programa que popularizou os podcasts no Brasil, Qual é o melhor curso de programação pra você? Nesse vídeo eu falo sobre qual curso de programação escolher, alguns inscritos perguntaram sobre cursos de programação e nesse vídeo eu faço uma comparação/análise dos principais cursos de programação, como o do Programador </p>
+            </div>
+        </div>
+
+        <div class="estatisticas grid colunas">
+            <section class="item01">
+                <div class="caixa">
+                    <h1>Estatísticas do PodPah</h1>
+                    <p>Views: 47 Milhões</p>
+                    <p>Inscritos: 710 Mil</p>
+                </div>
+                <div class="caixa">
+                    <h1>Estatísticas do Cortes do PodPah</h1>
+                    <p>Views: 161 Milhões</p>
+                    <p>Inscritos: 543 Mil</p>
+                </div>
+            </section>
+    
+            <section class="item02">
+                <h1>Conheça o Venus Podcast</h1>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2ngYCyA5PuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2Ni0_M34Bd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7Il2zk_XQCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QSPjfLlMoRA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video extra">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-tmaMVVJrdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
+
+        <div class="imagem imagem4">
+            <div class="informacoes">
+                <h1>Venus Podcast</h1>
+                <p>Atualmente é impossível falar de podcasts sem falar do flow, que é simpresmente o programa que popularizou os podcasts no Brasil, Qual é o melhor curso de programação pra você? Nesse vídeo eu falo sobre qual curso de programação escolher, alguns inscritos perguntaram sobre cursos de programação e nesse vídeo eu faço uma comparação/análise dos principais cursos de programação, como o do Programador </p>
+            </div>
+        </div>
+
+        <div class="estatisticas grid colunas">
+            <section class="item01">
+                <div class="caixa">
+                    <h1>Estatísticas do Ciência Sem Fim</h1>
+                    <p>Views: 9 Milhões</p>
+                    <p>Inscritos: 312 Mil</p>
+                </div>
+                <div class="caixa">
+                    <h1>Estatísticas do Cortes do Ciência Sem Fim</h1>
+                    <p>Views: 36 Milhões</p>
+                    <p>Inscritos: 272 Mil</p>
+                </div>
+            </section>
+    
+            <section class="item02">
+                <h1>Conheça o Venus Podcast</h1>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2ngYCyA5PuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2Ni0_M34Bd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7Il2zk_XQCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QSPjfLlMoRA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video extra">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-tmaMVVJrdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <h2>CRÉDITOS</h2>
+        <p><b>Matheus Teodoro Garcia:</b> <i>Pesquisa, Disigner e Produção do Podcast</i></p>
+        <p><b>Matheus Machado:</b> <i>Pesquisa, Produção do Podcast</i></p>
+        <p><b>Amanda Soares:</b> <i>Pesquisa e Produção do Podcast</i></p>
+        <p><b>Sara Stephany:</b> <i>Pesquisa e produção do Podcast</i></p>
+        <p><b>Lara Heloisa:</b> <i>Pesquisa e Produção do Podcast</i></p>
+        <br>
+        <h2>ENTRE E CONTATO</h2>
+        <div class=" grid socialmedia">
+            <div>
+                <h3>Matheus Teodoro</h3>
+                <p><img src="../style/imagens/logo-instagram.png" alt=""> @matheustedoro</p>
+                <p><img src="../style/imagens/logo-facebook.png" alt=""> Matheus Teodoro</p>
+                <p><img src="../style/imagens/logo-whatsapp.png" alt=""> (44) 997854076</p>
             </div>
             <div>
-                <img src="../style/imagens/imagens-maiores-podcasts/Slide 6.jpeg" alt="">
-                <img src="../style/imagens/imagens-maiores-podcasts/Slide 7.jpeg" alt="">
-                <img src="../style/imagens/imagens-maiores-podcasts/Slide 8.jpeg" alt="">
-                <img src="../style/imagens/imagens-maiores-podcasts/Slide 9.jpeg" alt="">
-                <img src="../style/imagens/imagens-maiores-podcasts/Slide 10.jpeg" alt="">
-                <img src="../style/imagens/imagens-maiores-podcasts/Slide 13.jpeg" alt="">
-                <img src="../style/imagens/imagens-maiores-podcasts/Slide 14.jpeg" alt="">
+                <h3>Matheus Machado</h3>
+                <p><img src="../style/imagens/logo-instagram.png" alt=""> @matheusmachado</p>
+                <p><img src="../style/imagens/logo-facebook.png" alt=""> Matheus Machado</p>
+                <p><img src="../style/imagens/logo-whatsapp.png" alt=""> (44) 997854076</p>
             </div>
-        </section>
-        <h3>OBS: Os podcasts da lista acima não estão ordenados! Isso porque, para um podcast ser considerado grande, deve-se levar em consideração diversos conceitos como, visualizaçãoes, seguidores, relevância e principalmente o nicho, e por não ser possível ter acesso a alguns desses dados, a lista acima foi criada de aleatória, porém ainda sim, com os maiores podcasts do brasil!</h3>
-        <footer>
-            <h2>CRÉDITOS</h2>
-            <p><b>Matheus Teodoro Garcia:</b> <i>Pesquisa, Disigner e Produção do Podcast</i></p>
-            <p><b>Matheus Machado:</b> <i>Pesquisa, Produção do Podcast</i></p>
-            <p><b>Amanda Soares:</b> <i>Pesquisa e Produção do Podcast</i></p>
-            <p><b>Sara Stephany:</b> <i>Pesquisa e produção do Podcast</i></p>
-            <p><b>Lara Heloisa:</b> <i>Pesquisa e Produção do Podcast</i></p>
-            <br>
-            <h2>ENTRE E CONTATO</h2>
-            <div class=" grid socialmedia">
-                <div>
-                    <h3>Matheus Teodoro</h3>
-                    <p><img src="../style/imagens/logo-instagram.png" alt=""> @matheustedoro</p>
-                    <p><img src="../style/imagens/logo-facebook.png" alt=""> Matheus Teodoro</p>
-                    <p><img src="../style/imagens/logo-whatsapp.png" alt=""> (44) 997854076</p>
-                </div>
-                <div>
-                    <h3>Matheus Machado</h3>
-                    <p><img src="../style/imagens/logo-instagram.png" alt=""> @matheusmachado</p>
-                    <p><img src="../style/imagens/logo-facebook.png" alt=""> Matheus Machado</p>
-                    <p><img src="../style/imagens/logo-whatsapp.png" alt=""> (44) 997854076</p>
-                </div>
-                <div>
-                    <h3>Amanda Soares</h3>
-                    <p><img src="../style/imagens/logo-instagram.png" alt=""> @amandasoares</p>
-                    <p><img src="../style/imagens/logo-facebook.png" alt=""> Amanda Soares</p>
-                    <p><img src="../style/imagens/logo-whatsapp.png" alt=""> (44) 997854076</p>
-                </div>
-                <div>
-                    <h3>Sara Stephany</h3>
-                    <p><img src="../style/imagens/logo-instagram.png" alt=""> @sarastephany</p>
-                    <p><img src="../style/imagens/logo-facebook.png" alt=""> Sara Stephany</p>
-                    <p><img src="../style/imagens/logo-whatsapp.png" alt=""> (44) 997854076</p>
-                </div>
-                <div>
-                    <h3>Lara Heloisa</h3>
-                    <p><img src="../style/imagens/logo-instagram.png" alt=""> @laraheloisa</p>
-                    <p><img src="../style/imagens/logo-facebook.png" alt=""> Lara Heloisa</p>
-                    <p><img src="../style/imagens/logo-whatsapp.png" alt=""> (44) 997854076</p>
-                </div>
+            <div>
+                <h3>Amanda Soares</h3>
+                <p><img src="../style/imagens/logo-instagram.png" alt=""> @amandasoares</p>
+                <p><img src="../style/imagens/logo-facebook.png" alt=""> Amanda Soares</p>
+                <p><img src="../style/imagens/logo-whatsapp.png" alt=""> (44) 997854076</p>
             </div>
-        </footer>
-    </main>
+            <div>
+                <h3>Sara Stephany</h3>
+                <p><img src="../style/imagens/logo-instagram.png" alt=""> @sarastephany</p>
+                <p><img src="../style/imagens/logo-facebook.png" alt=""> Sara Stephany</p>
+                <p><img src="../style/imagens/logo-whatsapp.png" alt=""> (44) 997854076</p>
+            </div>
+            <div>
+                <h3>Lara Heloisa</h3>
+                <p><img src="../style/imagens/logo-instagram.png" alt=""> @laraheloisa</p>
+                <p><img src="../style/imagens/logo-facebook.png" alt=""> Lara Heloisa</p>
+                <p><img src="../style/imagens/logo-whatsapp.png" alt=""> (44) 997854076</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
