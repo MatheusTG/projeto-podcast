@@ -11,6 +11,16 @@
             height: 100%;
         }
 
+        main > h1 {
+            background: linear-gradient(to bottom, rgba(50, 50, 50, 0.8), rgba(50, 50, 50, 0));
+            margin-top: -13px;
+            padding: 100px 0px;
+            font-size: max(20px, 6vw);
+            text-align: center;
+            text-shadow: 8px 8px 15px black;
+            font-family: "Barlow Black";
+        }
+
         /* IMAGENS */
 
         .imagem {
@@ -18,12 +28,13 @@
             height: max(1000px, 100vh);
             width: 100%;
             margin-top: 10%;
+            box-shadow: inset 2px 2px 20px 5px black;
         }
 
         .imagem1 {
             background: rgb(25, 26, 29) url(../style/imagens/imagens-maiores/flow-podcast.png) center center no-repeat fixed;
             background-size: cover;
-            margin-top: 100vh;
+            margin-top: 100px;
         }
 
         .imagem2 {
@@ -40,6 +51,19 @@
             background: rgb(25, 26, 29) url(../style/imagens/imagens-maiores/ciencia-sem-fim.png) center center no-repeat fixed;
             background-size: cover;
         }
+
+        .imagem5 {
+            background: rgb(25, 26, 29) url(../style/imagens/imagens-maiores/poddelas.jpg) center center no-repeat fixed;
+            background-size: cover;
+            margin-top: 15%;
+        }
+
+        .imagem6 {
+            background: rgb(25, 26, 29) url(../style/imagens/imagens-maiores/inteligencia-ltda.png) center center no-repeat fixed;
+            background-size: cover;
+            margin-top: 15%;
+        }
+
         /* INFORMACOES */
 
         .informacoes {
@@ -80,7 +104,7 @@
 
         .estatisticas .item01 h1 {
             font-size: max(35px, 4vw);
-            background: linear-gradient(90deg, rgb(200, 200, 200), rgba(50, 50, 50, 0.3));
+            background: linear-gradient(90deg, rgb(250, 250, 250), rgba(200, 200, 200, 0.5));
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -99,12 +123,47 @@
         }
 
         .footer {
-            margin-top: 20%;
+            margin-top: 10%;
         }
 
         @media (max-width: 900px) {
             .estatisticas .item02 {
                 margin-top: 5%;
+            }
+
+            .imagem {
+                height: max(100px, 80vh);
+            }
+
+            .informacoes {
+                height: 70vh;
+            }
+
+            .estatisticas .item02 {
+                opacity: 0;
+                overflow-y: hidden;
+            }
+
+            .estatisticas .item02 .video {
+                width: 1px;
+            }
+
+            .imagem {
+                margin-top: -200px;
+            }
+
+            .imagem1 {
+                margin-top: 10%;
+            }
+        }
+
+        @media (max-height: 500px) {
+            .imagem {
+                margin-top: 30%;
+            }
+
+            .imagem1 {
+                margin-top: 10%;
             }
         }
     </style>
@@ -129,10 +188,12 @@
         </nav>
     </header>
     <main>
+        <h1>CONHEÇA OS MAIORES PODCASTS DO BRASIL</h1>
         <div class="imagem imagem1">
             <div class="informacoes">
                 <h1>Flow Podcast</h1>
-                <p>Atualmente é impossível falar de podcasts sem falar do flow, que é simpresmente o programa que popularizou os podcasts no Brasil, Qual é o melhor curso de programação pra você? Nesse vídeo eu falo sobre qual curso de programação escolher, alguns inscritos perguntaram sobre cursos de programação e nesse vídeo eu faço uma comparação/análise dos principais cursos de programação, como o do Programador </p>
+                <p>Atualmente é quase impossível falar de podcasts sem falar do Flow, o podcast criado pelo Igor 3K e pelo Monark, porém como provavelmente todos já sabem, o Flow sofreu uma grande perda recentemente, por conta de um dos pontos discutidos do no programa, “A liberdade de expressão”, o que fez que o podcast perdesse não só a primeira colocação em relação a Views, mais também em relação a relevância, deixando esse troféu o PodPah, que por coincidência ou não, foi um dos podcasts mais ajudados pelo Flow.
+                </p>
             </div>
         </div>
 
@@ -173,7 +234,8 @@
         <div class="imagem imagem2">
             <div class="informacoes">
                 <h1>PodPah</h1>
-                <p>Atualmente é impossível falar de podcasts sem falar do flow, que é simpresmente o programa que popularizou os podcasts no Brasil, Qual é o melhor curso de programação pra você? Nesse vídeo eu falo sobre qual curso de programação escolher, alguns inscritos perguntaram sobre cursos de programação e nesse vídeo eu faço uma comparação/análise dos principais cursos de programação, como o do Programador </p>
+                <p>Sendo considerado o maior podcast do Brasil, o PodPah é sem duvidas o maior podcast com relação a views no YouTube atualmente.</p>
+                <p>Contando com mais de 5 milhões de inscritos, o foco do programa e em conversas normais do dia a dia, com ênfase, em pessoas que vieram de regiões periféricas e se tornaram verdadeiros artistas, como por exemplo rappers.</p>
             </div>
         </div>
 
@@ -205,7 +267,7 @@
                 <div class="video">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/r_2NKKzBA88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="video extra">
+                <div class="video">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/NxU9xfzd3sY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </section>
@@ -214,7 +276,8 @@
         <div class="imagem imagem3">
             <div class="informacoes">
                 <h1>Venus Podcast</h1>
-                <p>Atualmente é impossível falar de podcasts sem falar do flow, que é simpresmente o programa que popularizou os podcasts no Brasil, Qual é o melhor curso de programação pra você? Nesse vídeo eu falo sobre qual curso de programação escolher, alguns inscritos perguntaram sobre cursos de programação e nesse vídeo eu faço uma comparação/análise dos principais cursos de programação, como o do Programador </p>
+                <p>  Com quase 700 mil inscritos e mais de 44 milhões de views no YouTube, o Venus Podcast é um dos afiliados dos Estúdios Flow.</p>
+                <p>Sendo criado no dia 25 de janeiro de 2021, o Venus traz um Podcast com uma pegada feminina, sendo apresentado pelas simpáticas apresentadoras Yasmin Yassine e Cris Paiva.</p>
             </div>
         </div>
 
@@ -246,7 +309,7 @@
                 <div class="video">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/QSPjfLlMoRA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="video extra">
+                <div class="video">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/-tmaMVVJrdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </section>
@@ -254,8 +317,9 @@
 
         <div class="imagem imagem4">
             <div class="informacoes">
-                <h1>Venus Podcast</h1>
-                <p>Atualmente é impossível falar de podcasts sem falar do flow, que é simpresmente o programa que popularizou os podcasts no Brasil, Qual é o melhor curso de programação pra você? Nesse vídeo eu falo sobre qual curso de programação escolher, alguns inscritos perguntaram sobre cursos de programação e nesse vídeo eu faço uma comparação/análise dos principais cursos de programação, como o do Programador </p>
+                <h1>Ciência Sem Fim</h1>
+                <p>Sem dúvidas esse é um dos Podcasts mais interessantes para se assistir no Brasil.</p>
+                <p>Sendo criado em 23 de julho de 2021, pelo geofísico Sergio Sacani, o Ciência sem fim já conta com cerca de 300 mil inscritos e mais de 8 milhões de visualizações no Youtube, tendo com objetivo discutir temas científicos, como por exemplo o lançamento do novo telescópio James Webb.</p>
             </div>
         </div>
 
@@ -274,21 +338,106 @@
             </section>
     
             <section class="item02">
-                <h1>Conheça o Venus Podcast</h1>
+                <h1>Conheça o Ciência Sem Fim</h1>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2ngYCyA5PuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/14JKBh6F8yQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2Ni0_M34Bd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3a266IG_74w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7Il2zk_XQCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0rS25QzvAzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QSPjfLlMoRA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gDnNqrPFVzY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="video extra">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-tmaMVVJrdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/80S-rdcn45c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
+
+        <div class="imagem imagem5">
+            <div class="informacoes">
+                <h1>PodDelas</h1>
+                <p>Tendo inicio 26 de fevereiro de 2021, o Poddelas ja conta com mais de 1 milhão e meio de inscritos e mais de 90 milhões de visualizações no YouTube.</p>
+                <p>O intuito do programa é gerar um bate-papo entre mulheres, sobre moda, carreira, realities e muito mais, tudo isso com as sinápticas apresentadoras Tata Estaniecki e Flávia Pavanelli</p>
+            </div>
+        </div>
+
+        <div class="estatisticas grid colunas">
+            <section class="item01">
+                <div class="caixa">
+                    <h1>Estatísticas do PodDelas</h1>
+                    <p>Views: 97 Milhões</p>
+                    <p>Inscritos: 1,6 Milhões</p>
+                </div>
+                <div class="caixa">
+                    <h1>Estatísticas do Cortes do PodDelas</h1>
+                    <p>Views: 103 Milhões</p>
+                    <p>Inscritos: 417 Mil</p>
+                </div>
+            </section>
+    
+            <section class="item02">
+                <h1>Conheça o PodDelas</h1>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qQe6Wq2NiAI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jrr0-EDoLm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IGQsWvC1NxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Kpln7wc8Az0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/URHmKVKzv6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
+
+        <div class="imagem imagem6">
+            <div class="informacoes">
+                <h1>Inteligêcia Ltda.</h1>
+                <p>Apresentado pelo Rogério Viela, o Inteligência Ltda. Já conta com cerca de 1 milhões e duzentos  e cinquenta mil inscritos e mais de 127 milhões de inscritos no YouTube.</p>
+                <p>O objetivo do programa Inteligência Ltda. é trazer um bate-papo livre de preconceitos, um debate de ideias e teorias, achismos em geral e maluquices com alto teor de verdade.</p>
+                <p>E atualmente o podcast já conta com mais de 450 vídeos em seu canal do YouTube.</p>
+            </div>
+        </div>
+
+        <div class="estatisticas grid colunas">
+            <section class="item01">
+                <div class="caixa">
+                    <h1>Estatísticas do Inteligêcia Ltda.</h1>
+                    <p>Views: 138 Milhões</p>
+                    <p>Inscritos: 1,31 Milhões</p>
+                </div>
+                <div class="caixa">
+                    <h1>Estatísticas do Cortes do Inteligêcia Ltda.</h1>
+                    <p>Views: 328 Milhões</p>
+                    <p>Inscritos: 912 Mil</p>
+                </div>
+            </section>
+    
+            <section class="item02">
+                <h1>Conheça o Inteligêcia Ltda.</h1>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SZ3XNo8IuME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4ij7hJYBs5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-Q56Rq5UQjU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SlgWoDzOtmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/45PK6XQMn74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </section>
         </div>
